@@ -35,6 +35,23 @@ let initA11yMeVideo = function () {
                         videoPlayer.classList.add('active-controls');
                     });
                 });
+
+                mediaElement.addEventListener('ended', function() {
+                    let redirectLink = $('#redirectLink');
+                    if (redirectLink.length > 0) {
+                        let target = redirectLink.val();
+                        if (target.trim() !== '') {
+                            $('.loader-icon').show();
+                            gsap.to('body', {
+                                opacity: 0,
+                                duration: 1,
+                                onComplete: function() {
+                                    window.location.href = target;
+                                }
+                            });
+                        }
+                    }
+                });
             }
         });
     });
@@ -43,4 +60,3 @@ let initA11yMeVideo = function () {
 window.addEventListener('load', function (e) {
     initA11yMeVideo();
 }, true);
-
