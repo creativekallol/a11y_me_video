@@ -23,6 +23,10 @@
         <source>Text alternative</source>
         <target>Text-Alternative</target>
       </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_end_redirect">
+        <source>Redirection</source>
+        <target>Umleitung</target>
+      </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_header_visibility">
         <source>Header visibility</source>
         <target>Sichtbarkeit Überschrift</target>
@@ -243,6 +247,10 @@
       <trans-unit id="tt_content.tx_a11ymevideo_fulltextalternative_description">
         <source>Link to a page with text alternative</source>
         <target>Link zu einer Seite mit Text-Alternative</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_end_redirect_description">
+        <source>Redirection when video ends</source>
+        <target>Umleitungsziel nach dem Ende des Videos</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_mp4_description">
         <source>Please use the codec H.264 for the mp4 video. All current web browsers can play this.</source>
