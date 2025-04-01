@@ -30,6 +30,9 @@
       <trans-unit id="tt_content.tx_a11ymevideo_mp4link">
         <source>Main video | mp4</source>
       </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_end_redirect">
+        <source>Redirection</source>
+      </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_posterimg">
         <source>Poster image</source>
       </trans-unit>
@@ -66,7 +69,6 @@
       <trans-unit id="tt_content.tx_a11ymevideo_header_visibility.I.1">
         <source>Readable for screen readers only</source>
       </trans-unit>
-
       <trans-unit id="tt_content.tx_a11ymevideo_language.I.default">
         <source>Default</source>
       </trans-unit>
@@ -216,6 +218,9 @@
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_webmlink_description">
         <source>Video in additional alternative video format (optional)</source>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_end_redirect_description">
+        <source>Redirection when video ends</source>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_mainvideo_tab">
         <source>Main Video</source>

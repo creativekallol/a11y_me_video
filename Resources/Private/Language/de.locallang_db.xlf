@@ -79,6 +79,10 @@
         <source>Main video | webm</source>
         <target>Hauptvideo | webm</target>
       </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_end_redirect">
+        <source>Redirection</source>
+        <target>Umleitung</target>
+      </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_header_visibility.I.0">
         <source>Visible for all</source>
         <target>Sichtbar für alle</target>
@@ -284,6 +288,10 @@
       <trans-unit id="tt_content.tx_a11ymevideo_webmlink_description">
         <source>Video in additional alternative video format (optional)</source>
         <target>Video in zusätzlichem alternativen Videoformat (optional)</target>
+      </trans-unit>
+      <trans-unit id="tt_content.tx_a11ymevideo_end_redirect_description">
+        <source>Redirection when video ends</source>
+        <target>Umleitungsziel nach dem Ende des Videos</target>
       </trans-unit>
       <trans-unit id="tt_content.tx_a11ymevideo_mainvideo_tab">
         <source>Main Video</source>

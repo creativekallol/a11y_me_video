@@ -63,5 +63,9 @@
             </div>
         </f:defaultCase>
     </f:switch>
+    <f:if condition="{data.tx_a11ymevideo_end_redirect}">
+        <f:variable name="redirectLink"><f:uri.typolink parameter="{data.tx_a11ymevideo_end_redirect}" absolute="true" /></f:variable>
+        <input type="hidden" id="redirectLink" value="{redirectLink}" />
+    </f:if>
 </div>
 </html>
