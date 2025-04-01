@@ -35,6 +35,15 @@ let initA11yMeVideo = function () {
                         videoPlayer.classList.add('active-controls');
                     });
                 });
+
+                mediaElement.addEventListener('ended', function () {
+                    let redirectLink = document.getElementById('redirectLink');
+
+                    if (redirectLink && redirectLink.value.trim() !== '') {
+                        let target = redirectLink.value.trim();
+                        window.location.href = target;
+                    }
+                });
             }
         });
     });
@@ -43,4 +52,3 @@ let initA11yMeVideo = function () {
 window.addEventListener('load', function (e) {
     initA11yMeVideo();
 }, true);
-

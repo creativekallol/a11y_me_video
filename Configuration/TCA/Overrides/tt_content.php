@@ -9,33 +9,35 @@ call_user_func(function () {
     $llFile = 'LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:';
 
     $availableLanguages = [];
-    foreach ([
-        'default',
-        'en',
-        'fr',
-        'de',
-        'es',
-        'ca',
-        'zh',
-        'zh-cn',
-        'hr',
-        'cs',
-        'nl',
-        'hu',
-        'it',
-        'ja',
-        'ko',
-        'ms',
-        'fa',
-        'pl',
-        'pt',
-        'ro',
-        'ru',
-        'sk',
-        'sv',
-        'tr',
-        'uk',
-    ] as $identifier) {
+    foreach (
+        [
+            'default',
+            'en',
+            'fr',
+            'de',
+            'es',
+            'ca',
+            'zh',
+            'zh-cn',
+            'hr',
+            'cs',
+            'nl',
+            'hu',
+            'it',
+            'ja',
+            'ko',
+            'ms',
+            'fa',
+            'pl',
+            'pt',
+            'ro',
+            'ru',
+            'sk',
+            'sv',
+            'tr',
+            'uk',
+        ] as $identifier
+    ) {
         $availableLanguages[] = [
             'label' => $llFile . 'tt_content.tx_a11ymevideo_language.I.' . $identifier,
             'value' => $identifier,
@@ -116,6 +118,15 @@ call_user_func(function () {
             'description' => $llFile . 'tt_content.tx_a11ymevideo_fulltextalternative_description',
             'exclude' => '1',
             'label' => $llFile . 'tt_content.tx_a11ymevideo_fulltextalternative',
+        ],
+        'tx_a11ymevideo_end_redirect' => [
+            'config' => [
+                'type' => 'link',
+                'allowedTypes' => ['page', 'url', 'record'],
+            ],
+            'description' => $llFile . 'tt_content.tx_a11ymevideo_end_redirect_description',
+            'exclude' => '1',
+            'label' => $llFile . 'tt_content.tx_a11ymevideo_end_redirect',
         ],
         'tx_a11ymevideo_header_visibility' => [
             'config' => [
@@ -420,7 +431,7 @@ call_user_func(function () {
               --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
               header,header_layout,header_position,tx_a11ymevideo_header_visibility,date,header_link,subheader,bodytext,
             --div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_mainvideo_tab,
-              tx_a11ymevideo_language,tx_a11ymevideo_videoposition,tx_a11ymevideo_videowidth,tx_a11ymevideo_posterimg,tx_a11ymevideo_mp4,tx_a11ymevideo_webm,
+              tx_a11ymevideo_language,tx_a11ymevideo_videoposition,tx_a11ymevideo_videowidth,tx_a11ymevideo_posterimg,tx_a11ymevideo_mp4,tx_a11ymevideo_webm,tx_a11ymevideo_end_redirect,
             --div--;LLL:EXT:a11y_me_video/Resources/Private/Language/locallang_db.xlf:tt_content.tx_a11ymevideo_accessibility_tab,
               tx_a11ymevideo_captions,tx_a11ymevideo_signlanguage,tx_a11ymevideo_signlanguage_webm,tx_a11ymevideo_audiodescription,
               tx_a11ymevideo_fulltextalternative,tx_a11ymevideo_videooptions,
